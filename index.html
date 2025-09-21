@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Sweeper</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body onload="onInit()">
+    <div>
+        <img class="logo" src="img/mineSweeperLogo.png">
+    </div>
+    <div class="levels">
+        <button class="button-29" onclick="onClickLevel(this)">Begginer</button>
+        <button class="button-29" onclick="onClickLevel(this)">Medium</button>
+        <button class="button-29" onclick="onClickLevel(this)">Expert</button>
+    </div>
+    <div>
+        <h3><span class="mines"></span><span class="emoji" onclick="onInit()"></span><span class="timer"></span></h3>
+    </div>
+
+    <div class="board-container">
+        
+    </div>
+
+
+    <script src="js/util.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
