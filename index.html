@@ -12,6 +12,9 @@
     <div>
         <img class="logo" src="img/mineSweeperLogo.png">
     </div>
+    <div class="mode">
+        <button class="button-29" onclick="changeMode(this)">Light Mode</button>
+    </div>
     <div>Choose your level:</div>
     <div class="levels">
         <button class="button-29" onclick="onClickLevel(this)">Begginer</button>
@@ -19,20 +22,44 @@
         <button class="button-29" onclick="onClickLevel(this)">Expert</button>
     </div>
     <div>
-        <h3><span class="lives">Lives: </span><span class="mines"></span><span class="emoji" onclick="onInit()"></span><span class="timer"></span></h3>
+        <span class="emoji" onclick="onInit()"></span>
+    </div>
+    <div>
+        <h3><span class="lives">Lives: </span><span class="mines"></span><span class="timer"></span></h3>
     </div>
 
     <div class="board-container">
-        
+
     </div>
-    <div class="hints">
-        <h3>Hints: </h3>
-        
+
+    <div class="all-hints">
+        <div class="hints">
+
+        </div>
+
+        <div class="safe-move">
+            </br>
+            </br>
+            <button class="button-29" onclick="safeMove(this)">Safe Move</button>
+        </div>
+
+        <div>
+            <h3>Best Time: </h3>
+            </br>
+            <h3 class="best-time"></h3>
+        </div>
+
+
     </div>
+
+
+
+
 
 
     <script src="js/util.js"></script>
     <script src="js/game.js"></script>
+    <script src="js/hints.js"></script>
 </body>
 
 </html>
