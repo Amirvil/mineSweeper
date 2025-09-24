@@ -1,16 +1,16 @@
 body {
     background-color: #080B12;
-    font-family: 'Luminary';
+    font-family: "JetBrains Mono", monospace;
+    color: white;
 }
 
 div {
-    margin: 0 auto;
+    margin: 10px auto;
     text-align: center;
 }
 
 h3 {
     padding-top: 10px;
-    color: white;
     margin: 0 auto;
     text-align: center;
 }
@@ -23,7 +23,6 @@ table {
 td {
     background-color: #097BFF;
     border-radius: 10%;
-    color: white;
     width: 30px;
     height: 30px;
 }
@@ -42,63 +41,99 @@ td:hover {
     background-color: transparent;
 }
 
+.mine-revealed {
+    background-color: red;
+}
+
 .logo {
     margin: 0 auto;
     width: 600px;
     height: 360px;
 }
 
-.timer {
-    color: white;
+.emoji {
+    width: 100px;
+    height: 100px;
 }
 
 .emoji:hover {
     cursor: pointer;
 }
 
+.lives {
+    left: 0;
+}
+
+.hint {
+    width: 35px;
+    height: 50px;
+    padding: 10px;
+}
+
+.hint:hover {
+    cursor: pointer;
+}
+
+.clicked {
+    content: url('/img/bulbON.png');
+}
+
+.safe {
+    background-color: rgb(37, 248, 37);
+}
+
+.all-hints {
+    display: flex;
+    justify-content: center;
+}
+
+.light-mode{
+    background-color: rgb(143, 193, 250);
+    color: #080B12;
+}
 
 /* CSS */
 .button-29 {
-  align-items: center;
-  appearance: none;
-  background-image: radial-gradient(100% 100% at 100% 0, #64adff 0, #097BFF 100%);
-  border: 0;
-  border-radius: 6px;
-  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
-  height: 48px;
-  justify-content: center;
-  line-height: 1;
-  list-style: none;
-  overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  will-change: box-shadow,transform;
-  font-size: 18px;
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #64adff 0, #097BFF 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
 }
 
 .button-29:focus {
-  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
 }
 
 .button-29:hover {
-  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-  transform: translateY(-2px);
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
 }
 
 .button-29:active {
-  box-shadow: #3c4fe0 0 3px 7px inset;
-  transform: translateY(2px);
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
 }
