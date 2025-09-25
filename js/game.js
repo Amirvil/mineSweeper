@@ -115,11 +115,14 @@ function checkGameOver() {
 
 function victory() {
 
-    debugger
     gElEmoji.innerHTML = '<img class="emoji" src="img/emojiWin.png">'
     stopTime()
     gGame.isOn = false
-    if (gGame.secsPassed < localStorage.getItem(gLevel.SIZE)) localStorage.setItem(gLevel.SIZE, gGame.secsPassed)
+    if (gGame.secsPassed < localStorage.getItem(gLevel.SIZE)
+        && localStorage.getItem(gLevel.SIZE) > 0) {
+        localStorage.setItem(gLevel.SIZE, gGame.secsPassed)
+    }
+
 
 }
 
@@ -137,10 +140,10 @@ function updateLives() {
 
 }
 
-function updateBestScore(){
+function updateBestScore() {
 
     var sec = localStorage.getItem(gLevel.SIZE)
-    const min = String(Math.floor(sec/ 60))
+    const min = String(Math.floor(sec / 60))
     sec = String(sec - min * 60)
     const elBestTime = document.querySelector('.best-time')
     elBestTime.innerText = `${min.padStart(2, '0')}:${sec.padStart(2, '0')}`
