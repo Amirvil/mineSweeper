@@ -38,6 +38,7 @@ function onClickHint(hint) {
 function safeMove(elSafeBtn) {
 
     if (gGame.safeMoves === 0) return
+    if (!gGame.isOn) return
 
     const emptyCells = getEmptyCells(gBoard)
     const safeCell = emptyCells[getRandomIntInclusive(0, emptyCells.length - 1)]
